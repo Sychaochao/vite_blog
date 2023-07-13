@@ -69,7 +69,7 @@ export const NAV_DATA: NavData[] = [
   {
     title: 'syc的站点导航',
     items: [
-      {
+  /*     {
         icon: '/logo.png',
         title: '前端日常笔记',
         desc: '日常笔记记录（零零散散啥都记系列）',
@@ -86,7 +86,7 @@ export const NAV_DATA: NavData[] = [
         title: 'Qwerty Learner',
         desc: '为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件',
         link: 'https://qwerty.fe-mm.com'
-      },
+      }, */
       {
         icon: '/logo.png',
         title: 'mmPlayer',

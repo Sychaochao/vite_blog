@@ -1,12 +1,12 @@
 {
-  "name": "vitepress-fe-nav",
+  "name": "vite_blog",
   "version": "1.0.0",
   "description": "基于 VitePress 打造个人前端导航网站",
   "private": true,
   "scripts": {
     "dev": "vitepress dev docs --port=8732",
     "build": "vitepress build docs",
-    "build:github": "cross-env APP_BASE_PATH=/vitepress-fe-nav/ vitepress build docs",
+    "build:github": "cross-env APP_BASE_PATH=/vite_blog/ vitepress build docs",
     "prepare": "husky install",
     "format": "prettier --write ."
   },
