@@ -1,9 +1,4 @@
-import type { NavLink } from './components/type'
-
-type NavData = {
-  title: string
-  items: NavLink[]
-}
+import type { NavData } from '../.vitepress/theme/types'
 
 export const NAV_DATA: NavData[] = [
   {
@@ -67,9 +62,9 @@ export const NAV_DATA: NavData[] = [
     ]
   },
   {
-    title: 'syc的站点导航',
+    title: 'Syc站点导航',
     items: [
-  /*     {
+/*       {
         icon: '/logo.png',
         title: '前端日常笔记',
         desc: '日常笔记记录（零零散散啥都记系列）',
@@ -80,13 +75,13 @@ export const NAV_DATA: NavData[] = [
         title: '前端思维导图',
         desc: '用思维导图的方式总结个人所学知识',
         link: 'https://mindmap.fe-mm.com'
-      },
+      }, */
       {
         icon: 'https://qwerty.fe-mm.com/apple-touch-icon.png',
         title: 'Qwerty Learner',
         desc: '为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件',
         link: 'https://qwerty.fe-mm.com'
-      }, */
+      },
       {
         icon: '/logo.png',
         title: 'mmPlayer',
@@ -253,6 +248,12 @@ export const NAV_DATA: NavData[] = [
         link: 'https://svelte.dev'
       },
       {
+        icon: 'https://ts.nodejs.cn/favicon-32x32.png',
+        title: 'TypeScript 中文文档',
+        desc: 'TypeScript 是 具有类型语法的 JavaScript',
+        link: 'https://ts.nodejs.cn/'
+      },
+      {
         // icon: 'https://simpleicons.org/icons/jquery.svg',
         icon: '/icons/jquery.svg',
         title: 'jQuery API 中文文档',
@@ -271,16 +272,16 @@ export const NAV_DATA: NavData[] = [
         link: 'https://postcss.org'
       },
       {
-        icon: 'https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg',
+        icon: 'https://sass-lang.com/assets/img/logos/logo.svg',
         title: 'Sass',
         desc: '一个成熟，稳定，功能强大的专业级 CSS 扩展语言',
         link: 'https://sass-lang.com'
       },
       {
-        icon: 'https://www.tailwindcss.cn/apple-touch-icon.png',
+        icon: 'https://tailwind.nodejs.cn/favicons/favicon-32x32.png',
         title: 'TailwindCSS 中文网',
         desc: '一个功能类优先的 CSS 框架',
-        link: 'https://www.tailwindcss.cn'
+        link: 'https://tailwind.nodejs.cn/docs/installation'
       }
     ]
   },

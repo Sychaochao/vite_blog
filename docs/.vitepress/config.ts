@@ -1,6 +1,11 @@
-import { defineConfig } from 'vitepress'
+import { createWriteStream } from 'node:fs'
+import { resolve } from 'node:path'
+import { SitemapStream } from 'sitemap'
+import { defineConfig, PageData } from 'vitepress'
 
-import { head, nav, sidebar } from './configs'
+import { head, nav, sidebar, algolia } from './configs'
+
+const links: { url: string; lastmod: PageData['lastUpdated'] }[] = []
 
 export default defineConfig({
   outDir: '../dist',
@@ -33,7 +38,7 @@ export default defineConfig({
       label: '本页目录'
     },
 
-    socialLinks: [{ icon: 'github', link: '' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/maomao1996' }],
 
     footer: {
       // message: '如有转载或 CV 的请标注本站原文地址',
@@ -44,9 +49,29 @@ export default defineConfig({
     returnToTopLabel: '返回顶部',
     lastUpdatedText: '上次更新',
 
+    /* Algolia DocSearch 配置 */
+    algolia,
+
     docFooter: {
       prev: '上一篇',
       next: '下一篇'
     }
+  },
+
+  /* 生成站点地图 */
+  transformHtml: (_, id, { pageData }) => {
+    if (!/[\\/]404\.html$/.test(id))
+      links.push({
+        url: pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2'),
+        lastmod: pageData.lastUpdated
+      })
+  },
+  buildEnd: async ({ outDir }) => {
+    const sitemap = new SitemapStream({ hostname: 'https://notes.fe-mm.com/' })
+    const writeStream = createWriteStream(resolve(outDir, 'sitemap.xml'))
+    sitemap.pipe(writeStream)
+    links.forEach((link) => sitemap.write(link))
+    sitemap.end()
+    await new Promise((r) => writeStream.on('finish', r))
   }
 })
