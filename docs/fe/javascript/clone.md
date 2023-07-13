@@ -72,7 +72,7 @@ const obj1 = {
 }
 
 const obj2 = { ...obj1 }
-obj2.name = 'scy'
+obj2.name = 'syc'
 obj2.props.a++
 
 obj1 // { name: 'maomao', props: { a: 2 } }
