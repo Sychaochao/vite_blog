@@ -85,6 +85,10 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       link: '/workflow/vue/'
     },
     {
+      text: 'Nginx 配置',
+      link: 'workflow/nginx/'
+    },
+    {
       text: 'Node 相关',
       // collapsed: false,
       items: [{ text: 'npm 常用命令', link: '/workflow/node/npm' }]

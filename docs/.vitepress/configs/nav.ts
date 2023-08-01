@@ -36,6 +36,10 @@ export const nav: DefaultTheme.Config['nav'] = [
         text: 'Vue 小技巧',
         link: '/workflow/vue/'
       },
+      {
+        text: 'Nginx 配置',
+        link: '/workflow/nginx/'
+      },
       { text: 'npm 常用命令', link: '/workflow/node/npm' },
       // {
       //   text: '终端相关',
@@ -73,7 +77,7 @@ export const nav: DefaultTheme.Config['nav'] = [
   {
     text: 'New syc',
     items: [
-      { text: '个人主页', link: 'https://github.com/Sychaochao/vite_blog' },
+      { text: '个人主页', link: 'https://github.com/ycl8/vv_blog' },
    /*    {
         text: '日常笔记',
         link: 'https://github.com/maomao1996/daily-notes'

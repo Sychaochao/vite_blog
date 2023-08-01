@@ -27,8 +27,8 @@
 
 ## 访问地址
 
-- <https://github.com/Sychaochao/vite_blog.git>
-- <https://sychaochao.github.io/vite_blog/>
+- <https://github.com/ycl8/vv_blog.git>
+- <https://sychaochao.github.io/vv_blog/>
 
 
 ## 鼓励作者

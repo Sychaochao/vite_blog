@@ -7,16 +7,16 @@
   "description": "Development related notes",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sychaochao/vite_blog.git"
+    "url": "git+https://github.com/ycl8/vv_blog.git"
   },
  
   "license": "MIT",
-  "homepage": "https://github.com/Sychaochao/vite_blog#readme",
+  "homepage": "https://github.com/ycl8/vv_blog#readme",
   "author": "maomao1996 <1714487678@qq.com>",
   "scripts": {
     "dev": "cross-env NODE_ENV=development vitepress dev docs --port=8732",
     "build": "vitepress build docs",
-    "build:github": "cross-env APP_BASE_PATH=/vv-blog/ npm run build",
+    "build:github": "cross-env APP_BASE_PATH=/vv_blog/ npm run build",
     "lint": "prettier --write .",
     "prepare": "husky install"
   },
