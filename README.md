@@ -28,7 +28,7 @@
 ## 访问地址
 
 - <https://github.com/ycl8/vv_blog.git>
-- <https://sychaochao.github.io/vv_blog/>
+- <https://ycl8.github.io/vv_blog/>
 
 
 ## 鼓励作者
