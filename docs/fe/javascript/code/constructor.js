@@ -1,6 +1,6 @@
 /** 基本类型 */
 (true).constructor === Boolean            // true
-'New sss'.constructor === String           // true
+'vv_yc'.constructor === String           // true
 (2021).constructor === Number             // true
 Symbol().constructor === Symbol           // true
 BigInt(2021).constructor === BigInt       // true

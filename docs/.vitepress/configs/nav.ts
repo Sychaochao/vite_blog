@@ -37,14 +37,14 @@ export const nav: DefaultTheme.Config['nav'] = [
         link: '/workflow/vue/'
       },
       {
-        text: 'Nginx 配置',
-        link: '/workflow/nginx/'
+        text: 'nginx 配置',
+        link: '/workflow/vue/'
       },
       { text: 'npm 常用命令', link: '/workflow/node/npm' },
       // {
       //   text: '终端相关',
       //   items: [
-      { text: 'Zsh 配置', link: '/workflow/terminal/zsh' },
+      // { text: 'Zsh 配置', link: '/workflow/terminal/zsh' },
       { text: '命令行工具', link: '/workflow/terminal/toolkit' },
       { text: 'Shell 命令', link: '/workflow/terminal/shell' },
       //   ]
@@ -55,7 +55,7 @@ export const nav: DefaultTheme.Config['nav'] = [
     activeMatch: '^/workflow'
   },
   { text: '踩坑记录', link: '/pit/npm', activeMatch: '^/pit' },
-/*   {
+  {
     text: '提效工具',
     items: [
       {
@@ -73,12 +73,12 @@ export const nav: DefaultTheme.Config['nav'] = [
       { text: '书签脚本', link: '/efficiency/bookmark-scripts' }
     ],
     activeMatch: '^/efficiency'
-  }, */
+  },
   {
-    text: 'New syc',
+    text: 'vv_yc',
     items: [
-      { text: '个人主页', link: 'https://github.com/ycl8/vv_blog' },
-   /*    {
+      { text: '个人主页', link: 'https://github.com/ycl8' },
+    /*   {
         text: '日常笔记',
         link: 'https://github.com/maomao1996/daily-notes'
       },

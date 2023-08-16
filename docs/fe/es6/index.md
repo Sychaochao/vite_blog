@@ -94,8 +94,8 @@ fn()
 ### const 常量定义
 
 ```js
-const NAME = 'New sss'
-NAME = 'New sss1998' // 报错
+const NAME = 'New yc'
+NAME = 'vv_yc' // 报错
 ```
 
 ## 模板字符串
@@ -103,7 +103,7 @@ NAME = 'New sss1998' // 报错
 模板字符串 (template string) 是增强版的字符串，用反引号(**`**)标识。它可以当作普通字符串、定义多行字符串或者在字符串中嵌入变量、函数调用以及表达式
 
 ```js
-let name = 'New sss'
+let name = 'New yc'
 let age = 18
 
 /* ES5 拼接字符串 */
@@ -119,7 +119,7 @@ let es6Str = `我叫: ${name}，我的年龄是: ${age + 1} 岁`
 
 ```js
 const obj = {
-  name: 'New sss',
+  name: 'New yc',
   age: 18
 }
 
@@ -141,7 +141,7 @@ console.log(y) // null
 ### 解构数组
 
 ```js
-const arr = ['New sss', 18]
+const arr = ['New yc', 18]
 
 /* ES5 写法 */
 const name = arr[0]
@@ -166,13 +166,13 @@ console.log(z) // null
 字符串也可以解构赋值，因为字符串被转换成了一个类似数组的对象
 
 ```js
-const [a, b, c] = 'New sss'
+const [a, b, c] = 'New yc'
 console.log(a) // m
 console.log(b) // a
 console.log(c) // o
 
 /* 解构 length 属性 */
-const { length } = 'New sss'
+const { length } = 'New yc'
 console.log(length) // 6
 ```
 
@@ -240,8 +240,8 @@ function log(name, ...params) {
   console.log(name, params)
 }
 
-log('New sss', 1, 2) // New sss [1, 2]
-log('New sss', 1, 2, 3) // New sss [1, 2, 3]
+log('New yc', 1, 2) // New yc [1, 2]
+log('New yc', 1, 2, 3) // New yc [1, 2, 3]
 ```
 
 ::: tip 剩余参数(rest 参数)
@@ -355,7 +355,7 @@ const arr2 = [...arr1]
 const [...arr2] = arr1
 
 /* 拷贝对象 */
-const obj1 = { name: 'New sss' }
+const obj1 = { name: 'New yc' }
 // 写法一
 const obj2 = { ...obj1 }
 // 写法二
@@ -371,7 +371,7 @@ const arr2 = ['a', 'b', 'c']
 const arr = [...arr1, ...arr2]
 
 /* 合并对象 */
-const obj1 = { name: 'New sss' }
+const obj1 = { name: 'New yc' }
 const obj2 = { age: 18 }
 const obj = { ...obj1, ...obj2 }
 ```
@@ -529,9 +529,9 @@ arr.findIndex((item) => item === 9) // -1
 `at()` 方法接受一个整数(支持负数)作为参数返回对应位置的成员，如果**参数位置超出了数组范围则返回 `undefined`**
 
 ```js
-const arr = ['New sss', 18]
+const arr = ['New yc', 18]
 
-arr.at(0) // 'New sss'
+arr.at(0) // 'New yc'
 arr.at(-1) // 18
 arr.at(99) // undefined
 ```
@@ -575,23 +575,23 @@ arr.flatMap((x) => [[x * 2]]) // [[2], [4], [6], [8]]
 ```js
 /* 属性简写 */
 // ES5 写法
-const key = 'New sss'
+const key = 'New yc'
 const obj = { key: key }
 
 // ES6 写法
-const key = 'New sss'
+const key = 'New yc'
 const obj = { key }
 
 /* 方法简写 */
 // ES5 写法
 const obj = {
   log: function () {
-    console.log('New sss')
+    console.log('New yc')
   }
 }
 
 // ES6 写法
-const key = 'New sss'
+const key = 'New yc'
 const obj = {
   log() {}
 }
@@ -604,7 +604,7 @@ const obj = {
 ```js
 const obj = {
   f() {
-    this.name = 'New sss'
+    this.name = 'New yc'
   }
 }
 
@@ -619,14 +619,14 @@ new obj.f() // 报错
 // 定义属性名
 const key = 'age'
 const obj = {
-  ['name' + 1]: 'New sss',
+  ['name' + 1]: 'New yc',
   [key]: 18
 }
 
 // 定义方法名
 const obj = {
   ['log' + 'name']() {
-    console.log('New sss')
+    console.log('New yc')
   }
 }
 ```
@@ -642,7 +642,7 @@ const obj = { [key] }
 
 // 正确
 const key = 'name';
-const obj = { [key]: 'New sss'};
+const obj = { [key]: 'New yc'};
 ```
 
 属性名表达式如果是一个对象会自动将其转为字符串 `[object Object]`
@@ -730,7 +730,7 @@ Object.assign(obj, null) === obj // true
 const obj = {}
 Object.assign(obj, 1, true) === obj // true
 // 字符串会以字符数组的形式做合并
-Object.assign({}, 'New sss') // {0: 'm', 1: 'a', 2: 'o', 3: 'm', 4: 'a', 5: 'o'}
+Object.assign({}, 'New yc') // {0: 'm', 1: 'a', 2: 'o', 3: 'm', 4: 'a', 5: 'o'}
 
 /* 数组 */
 // 当参数都为数组时
@@ -798,10 +798,10 @@ toast({ content: '提示' }) // {duration: 2000, content: '提示'}
 `Object.entries()` 方法返回一个数组（二维数组），其成员为参数对象自身的（不含继承的）所有可遍历属性的键值对数组(`ES2017` 引入)
 
 ```js
-const obj = { name: 'New sss', age: 18 }
+const obj = { name: 'New yc', age: 18 }
 Object.keys(obj) // ['name', 'age']
-Object.values(obj) //  ['New sss', 18]
-Object.entries(obj) // [['name', 'New sss'], ['age', 18]]
+Object.values(obj) //  ['New yc', 18]
+Object.entries(obj) // [['name', 'New yc'], ['age', 18]]
 ```
 
 ### Object.fromEntries()
@@ -809,15 +809,15 @@ Object.entries(obj) // [['name', 'New sss'], ['age', 18]]
 `Object.fromEntries()` 方法是 `Object.entries()` 的逆操作，用于将键值对的数据结构还原为对象
 
 ```js
-Object.fromEntries([['name', 'New sss']]) // {name: 'New sss'}
+Object.fromEntries([['name', 'New yc']]) // {name: 'New yc'}
 
 /* Map 转对象 */
-const map = new Map([['name', 'New sss']])
-Object.fromEntries(map) // {name: 'New sss'}
+const map = new Map([['name', 'New yc']])
+Object.fromEntries(map) // {name: 'New yc'}
 
 /* 将查询字符串转为对象 */
-const params = 'name=New sss&age=18'
-Object.fromEntries(new URLSearchParams(params)) // {name: 'New sss', age: '18'}
+const params = 'name=New yc&age=18'
+Object.fromEntries(new URLSearchParams(params)) // {name: 'New yc', age: '18'}
 ```
 
 ### 对象遍历方法对比
@@ -957,20 +957,20 @@ x ?? (x = y)
 ```js
 // util.js
 /* 单个输出 */
-export const name = 'New sss'
+export const name = 'New yc'
 export function log() {
   console.log(name)
 }
 
 /* 统一输出 */
-const name = 'New sss'
+const name = 'New yc'
 function log() {
   console.log(name)
 }
 export { name, log }
 
 /* 使用 as 关键字重命名 */
-const name = 'New sss'
+const name = 'New yc'
 export { name as nickname }
 ```
 
@@ -994,8 +994,8 @@ import { name as nickname, log as logName } from './util'
 
 /* 模块的整体加载 */
 import * as util from './util'
-util.name // New sss
-util.log() // New sss
+util.name // New yc
+util.log() // New yc
 ```
 
 ### export default 命令
@@ -1005,19 +1005,19 @@ util.log() // New sss
 ```js
 /* 输出匿名函数 */
 export default function () {
-  console.log('New sss')
+  console.log('New yc')
 }
 
 import log from './export-default'
-log() // 'New sss'
+log() // 'New yc'
 
 /* 输出非匿名函数 */
 export default fn function () {
-  console.log('New sss')
+  console.log('New yc')
 }
 
 import log from './export-default'
-log() // 'New sss'
+log() // 'New yc'
 ```
 
 ::: tip export default 命令注意点
@@ -1035,7 +1035,7 @@ const a = 1;
 export default a;
 
 // 直接输出
-export default 'New sss'
+export default 'New yc'
 export default 1 + 2
 ```
 
@@ -1248,4 +1248,4 @@ Promise.prototype.finally = function (callback) {
 - `Promise.any()` (ES2021)
   - 将多个 `Promise` 实例，包装成一个新的 `Promise` 实例，只要参数实例有一个变成 `fulfilled` 状态，包装实例就会变成 `fulfilled` 状态；如果所有参数实例都变成 `rejected` 状态，包装实例才会变成 `rejected` 状态
 
-[Promise 实现](https://github.com/New sss1996/Promise) 简易实现、A+ 规范实现、原型方法、静态方法实现
+[Promise 实现](https://github.com/New yc1996/Promise) 简易实现、A+ 规范实现、原型方法、静态方法实现

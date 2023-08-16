@@ -1,20 +1,17 @@
 <script setup lang="ts">
-// import { VPDocAsideSponsors } from 'vitepress/theme'
+import { VPDocAsideSponsors } from 'vitepress/theme'
 
-const data = [
+/* const data = [
   {
-    // items: [{ img: 'https://cdn.jsdelivr.net/gh/maomao1996/picture/sponsor/wechat-color.jpg' }] //付款码
+    items: [{ img: 'https://cdn.jsdelivr.net/gh/maomao1996/picture/sponsor/wechat-color.jpg' }]
   },
   {
-    // items: [{ img: 'https://cdn.jsdelivr.net/gh/maomao1996/picture/sponsor/alipay-color.jpg' }]
+    items: [{ img: 'https://cdn.jsdelivr.net/gh/maomao1996/picture/sponsor/alipay-color.jpg' }]
   }
-]
+] */
 </script>
 
 <template>
-<div>
-  
-</div>
   <!-- <VPDocAsideSponsors :data="data" /> -->
 </template>
 

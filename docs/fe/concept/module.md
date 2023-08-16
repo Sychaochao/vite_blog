@@ -33,7 +33,7 @@
 
 ```js
 /* util.js */
-const name = 'syc'
+const name = 'vv_yc'
 exports.name = name
 module.exports.log = function () {
   console.log(name)

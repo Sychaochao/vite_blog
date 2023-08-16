@@ -62,9 +62,9 @@ export const NAV_DATA: NavData[] = [
     ]
   },
   {
-    title: 'Syc站点导航',
+    title: 'vv_yc站点导航',
     items: [
-/*       {
+ /*      {
         icon: '/logo.png',
         title: '前端日常笔记',
         desc: '日常笔记记录（零零散散啥都记系列）',
@@ -87,6 +87,12 @@ export const NAV_DATA: NavData[] = [
         title: 'mmPlayer',
         desc: 'mmPlayer 在线音乐播放器',
         link: 'https://netease-music.fe-mm.com'
+      },
+      {
+        icon: '/logo.png',
+        title: '茂茂物语',
+        desc: '本站基于 茂茂物语-- vitepress-nav-template',
+        link: 'https://github.com/maomao1996'
       }
     ]
   },
@@ -282,6 +288,12 @@ export const NAV_DATA: NavData[] = [
         title: 'TailwindCSS 中文网',
         desc: '一个功能类优先的 CSS 框架',
         link: 'https://tailwind.nodejs.cn/docs/installation'
+      },
+      {
+        icon: 'https://whirl.netlify.app/favicon.ico',
+        title: 'Whirl',
+        desc: '创建各样的 CSS 加载动画！',
+        link: 'https://whirl.netlify.app/'
       }
     ]
   },
@@ -483,10 +495,10 @@ export const NAV_DATA: NavData[] = [
         link: 'https://iconpark.oceanengine.com/official'
       },
       {
-        icon: 'https://emoji.muan.co/appicon.png',
-        title: 'Emoji searcher',
+        icon: 'https://www.emojiall.com/favicon.ico',
+        title: 'EMOJI中文网',
         desc: 'Emoji 表情大全',
-        link: ''
+        link: 'https://www.emojiall.com/zh-hans'
       }
     ]
   },

@@ -17,7 +17,7 @@ const pageId = computed(() => route.path.replace('/mm-notes', ''))
       title="当前页面累计访问数"
       onerror="this.style.display='none'"
     />
-    Copyright © 2019-present New syc
+    Copyright © 2023-present vv_yc
   </div>
 </template>
 

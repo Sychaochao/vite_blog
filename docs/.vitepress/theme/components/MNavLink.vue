@@ -32,8 +32,6 @@ const formatBadge = computed(() => {
   }
   return props.badge
 })
-console.log(formatBadge);
-
 </script>
 
 <template>
@@ -41,7 +39,6 @@ console.log(formatBadge);
     <article class="box" :class="{ 'has-badge': formatBadge }">
       <div class="box-header">
         <template v-if="!noIcon">
-      
           <div v-if="svg" class="icon" v-html="svg"></div>
           <div v-else-if="icon && typeof icon === 'string'" class="icon">
             <img
@@ -51,11 +48,8 @@ console.log(formatBadge);
             />
           </div>
         </template>
-        
-
         <h5 v-if="title" :id="formatTitle" class="title" :class="{ 'no-icon': noIcon }">
           {{ title }}
-
         </h5>
       </div>
       <Badge v-if="formatBadge" class="badge" :type="formatBadge.type" :text="formatBadge.text" />

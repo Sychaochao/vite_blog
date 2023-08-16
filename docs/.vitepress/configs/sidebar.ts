@@ -85,8 +85,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       link: '/workflow/vue/'
     },
     {
-      text: 'Nginx 配置',
-      link: 'workflow/nginx/'
+      text: 'nginx 相关',
+      link: '/workflow/nginx/'
     },
     {
       text: 'Node 相关',
@@ -97,7 +97,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: '终端相关',
       collapsed: false,
       items: [
-        { text: 'Zsh 配置', link: '/workflow/terminal/zsh' },
+        // { text: 'Zsh 配置', link: '/workflow/terminal/zsh' },
         { text: '命令行工具', link: '/workflow/terminal/toolkit' },
         { text: 'Shell 命令', link: '/workflow/terminal/shell' }
       ]

@@ -1,7 +1,7 @@
 {
-  "name": "New Syc",
-  "short_name": "New Syc",
-  "description": "Y c 的成长之路",
+  "name": "New syc",
+  "short_name": "New syc",
+  "description": "梨花院落溶溶月，柳絮池塘淡淡风",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#000000",

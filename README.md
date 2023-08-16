@@ -27,12 +27,9 @@
 
 ## 访问地址
 
-- <https://github.com/ycl8/vv_blog.git>
 - <https://ycl8.github.io/vv_blog/>
-
+- <https://github.com/ycl8/vv_blog.git>
 
 ## 鼓励作者
 
 如果你觉得博客对你有帮助，可以帮忙点个 `star` 或者打赏犒劳一下
-
-

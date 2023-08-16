@@ -29,8 +29,8 @@ let isFlag: boolean = true
 #### string 字符串类型
 
 ```ts
-let name: string = 'syc'
-name = 'syc'
+let name: string = 'vv_yc'
+name = 'New yc'
 ```
 
 #### number 数字类型
@@ -57,9 +57,9 @@ let big: bigint = 19961996n
 `symbol` 类型表示独一无二的值，其必须通过 `Symbol` 函数生成，常用于创建对象属性的唯一标识符
 
 ```ts
-let sym: symbol = Symbol('syc')
-sym = Symbol('syc') // OK
-sym = 'syc' // Error
+let sym: symbol = Symbol('vv_yc')
+sym = Symbol('New yc') // OK
+sym = 'New yc' // Error
 ```
 
 ### `object`
@@ -96,9 +96,9 @@ create(undefined) // Error
 ```ts
 /* 你可以任意操作你的变量 TypeScript 不会抛出相关的提示 */
 let value: any = 1
-free = { name: 'maomao' }
+free = { name: 'vv_yc' }
 free.log()
-free = 'syc'
+free = 'New yc'
 ```
 
 :::warning 注意点
@@ -174,7 +174,7 @@ function error(message: string): never {
 - **类型推断**：由 `TypeScript` 根据上下文内容自动推断出变量类型
 
 ```ts
-let name: string = 'maomao'
+let name: string = 'vv_yc'
 let age = 18 // TypeScript 自动推断为 job: number
 ```
 
@@ -197,7 +197,7 @@ const strArray: string[] = ['1', '2', '3']
 // 只允许存储 number 类型
 const numArray: number[] = [1, 2, 3]
 // 任意类型
-const anyArray: any[] = ['maomao', 18, {}]
+const anyArray: any[] = ['vv_yc', 18, {}]
 ```
 
 通过**泛型**定义数组类型：
@@ -208,7 +208,7 @@ const strArray: Array<string> = ['1', '2', '3']
 // 只允许存储 number 类型
 const numArray: Array<number> = [1, 2, 3]
 // 任意类型
-const anyArray: Array<any> = ['maomao', 18, {}]
+const anyArray: Array<any> = ['vv_yc', 18, {}]
 ```
 
 ### 元组 Tuple
@@ -218,7 +218,7 @@ const anyArray: Array<any> = ['maomao', 18, {}]
 当对元组类型的数据进行 **越界访问** 或 **分配错误的类型值** 时，`TypeScript` 将报错提示
 
 ```ts
-const tuple: [string, number] = ['maomao', 18]
+const tuple: [string, number] = ['vv_yc', 18]
 
 console.log(tuple[2]) // Error
 tuple[0] = 666 // Error
@@ -298,7 +298,7 @@ interface Person {
 }
 
 const person: Person = {
-  name: 'maomao',
+  name: 'vv_yc',
   age: 18
 }
 ```
@@ -313,11 +313,11 @@ interface Person {
 
 // Error: 缺少属性 "age"
 const person1: Person = {
-  name: 'syc'
+  name: 'vv_yc'
 }
 // Error: "gender" 不在类型 "Person" 中
 const person2: Person = {
-  name: 'syc',
+  name: 'New yc',
   age: 18,
   gender: 'male'
 }
@@ -334,7 +334,7 @@ interface Person {
 }
 
 const person: Person = {
-  name: 'maomao'
+  name: 'vv_yc'
 }
 ```
 
@@ -348,7 +348,7 @@ interface Person {
 
 // Error: "gender" 不在类型 "Person" 中
 const person: Person = {
-  name: 'syc',
+  name: 'New yc',
   age: 18,
   gender: 'male'
 }
@@ -366,7 +366,7 @@ interface Person {
 }
 
 const person: Person = {
-  name: 'maomao',
+  name: 'vv_yc',
   gender: 'male'
 }
 ```
@@ -384,7 +384,7 @@ interface Person {
 
 // Error: 属性 "age" 与索引签名不兼容，不能将类型 "number" 分配给类型 "string"
 const person: Person = {
-  name: 'syc',
+  name: 'New yc',
   age: 18,
   gender: 'male'
 }
@@ -400,7 +400,7 @@ interface Person {
 }
 
 const person: Person = {
-  name: 'syc',
+  name: 'New yc',
   age: 18,
   gender: 'male'
 }
@@ -420,7 +420,7 @@ interface Person {
 
 const person: Person = {
   id: 1,
-  name: 'syc',
+  name: 'New yc',
   age: 18,
   gender: 'male'
 }
@@ -441,7 +441,7 @@ interface Person {
 
 // Error: 缺少属性 "id"
 const person: Person = {
-  name: 'syc',
+  name: 'New vv',
   age: 18,
   gender: 'male'
 }
@@ -470,7 +470,7 @@ type Person = {
 **字符串字面量类型**：
 
 ```ts
-type Name = 'New syc' | 'syc1998' | 'syc'
+type Name = 'vite' | 'vv_yc1998' | 'New yc'
 ```
 
 **数字字面量类型**：

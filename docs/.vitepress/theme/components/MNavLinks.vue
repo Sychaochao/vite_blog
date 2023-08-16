@@ -14,8 +14,6 @@ const props = defineProps<{
 const formatTitle = computed(() => {
   return slugify(props.title)
 })
-console.log(formatTitle);
-
 </script>
 
 <template>

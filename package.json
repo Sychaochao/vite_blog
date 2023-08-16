@@ -9,10 +9,11 @@
     "type": "git",
     "url": "git+https://github.com/ycl8/vv_blog.git"
   },
- 
+  "bugs": {
+    "url": "https://github.com/ycl8/vv_blog#readme"
+  },
   "license": "MIT",
   "homepage": "https://github.com/ycl8/vv_blog#readme",
-  "author": "maomao1996 <1714487678@qq.com>",
   "scripts": {
     "dev": "cross-env NODE_ENV=development vitepress dev docs --port=8732",
     "build": "vitepress build docs",

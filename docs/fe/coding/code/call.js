@@ -28,7 +28,7 @@ function get(params) {
 }
 
 const obj = {
-  name: 'syc',
+  name: 'New yc',
   age: 18
 }
 

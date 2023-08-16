@@ -4,7 +4,7 @@ layoutClass: 'm-home-layout'
 
 hero:
   name: New syc
-  text: 梨花院落溶溶月，柳絮池塘淡淡风
+  text: 柳絮池塘淡淡风!
   tagline: 知识是进步的阶梯，争取每天都有知识点更新
   image:
     src: /logo.png
@@ -37,7 +37,7 @@ features:
   - icon: 🧰
     title: 提效工具
     details: 工欲善其事，必先利其器<br />记录开发和日常使用中所用到的软件、插件、扩展等
-    # link: /efficiency/online-tools
+    link: /efficiency/online-tools
     linkText: 提效工具
   - icon: 🐞
     title: 踩坑记录
@@ -47,7 +47,7 @@ features:
   - icon: 💯
     title: 吾志所向，一往无前。
     details: '<small class="bottom-small">一个想躺平的小开发</small>'
-    # link: https://fe-mm.com
+    link: https://fe-mm.com
 ---
 
 <style>

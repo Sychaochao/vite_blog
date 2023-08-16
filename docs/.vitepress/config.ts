@@ -12,8 +12,8 @@ export default defineConfig({
   base: process.env.APP_BASE_PATH || '/',
 
   lang: 'zh-CN',
-  title: 'syc',
-  description: 'syc的成长之路，包含前端常用知识、源码阅读笔记、各种奇淫技巧、日常提效工具等',
+  title: 'New syc',
+  description: 'vv_yc成长之路，包含前端常用知识、源码阅读笔记、各种奇淫技巧、日常提效工具等',
   head,
 
   lastUpdated: true,
@@ -38,12 +38,12 @@ export default defineConfig({
       label: '本页目录'
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/ycl8/vv_blog' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/ycl8' }],
 
-    footer: {
-      // message: '如有转载或 CV 的请标注本站原文地址',
-      // copyright: 'Copyright © 2019-present maomao'
-    },
+   /*  footer: {
+      message: '如有转载或 CV 的请标注本站原文地址',
+      copyright: 'Copyright © 2019-present maomao'
+    }, */
 
     darkModeSwitchLabel: '外观',
     returnToTopLabel: '返回顶部',
